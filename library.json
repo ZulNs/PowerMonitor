@@ -1,0 +1,18 @@
+{
+  "name": "PowerMonitor",
+  "keywords": "ac, electricity, voltage, current, power, monitoring, zmpt101b, zmct103c",
+  "description": "AC Power Monitoring",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/ZulNs/PowerMonitor.git"
+  },
+  "frameworks": "arduino",
+  "platforms": "avr",
+  "authors":
+  {
+    "name": "ZulNs",
+    "url": "https://zulns.github.io",
+    "maintainer": true
+  }
+}

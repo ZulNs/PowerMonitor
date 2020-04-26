@@ -1,0 +1,36 @@
+#######################################
+# Syntax Coloring Map For DMD_MAX72xx
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+PowerMonitor	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+initVoltageSensor	KEYWORD2
+initCurrentSensor	KEYWORD2
+sample	KEYWORD2
+calculate	KEYWORD2
+sampleAndCalculate	KEYWORD2
+getFrequency	KEYWORD2
+getVoltageSampleArray	KEYWORD2
+getCurrentSampleArray	KEYWORD2
+getVcc	KEYWORD2
+setVbgCalibration	KEYWORD2
+sampleCount	KEYWORD2
+Vrms	KEYWORD2
+Irms	KEYWORD2
+realPower	KEYWORD2
+apparentPower	KEYWORD2
+powerFactor	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+RESERVE	LITERAL1
