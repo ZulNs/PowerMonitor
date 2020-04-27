@@ -13,9 +13,9 @@
 #include <PowerMonitor.h>
 
 const byte VOLTAGE_SENSOR_PIN = 0;
-const byte CURRENT_SENSOR_PIN = 1;
+//const byte CURRENT_SENSOR_PIN = 1;
 const float VOLTAGE_CALIBRATION = 1.0;
-const float CURRENT_CALIBRATION = 1.0;
+//const float CURRENT_CALIBRATION = 1.0;
 
 PowerMonitor pmon;
 
@@ -23,11 +23,13 @@ void setup() {
   int i;
   int16_t * samplesV, * samplesI;
   
-  Serial.begin(115200);
+  Serial.begin(9600);
   while (!Serial);
+  
   Serial.println();
   Serial.println("*** Observing the Voltage Phase Shift ***");
   Serial.println();
+  
   pmon.initVoltageSensor(VOLTAGE_SENSOR_PIN, VOLTAGE_CALIBRATION);
   //pmon.initCurrentSensor(CURRENT_SENSOR_PIN, CURRENT_CALIBRATION);
     // No need above line code.
@@ -81,10 +83,10 @@ void setup() {
   Serial.println(F("====================="));
 
   Serial.println();
-  Serial.println("Frequency =\t\t" + String(pmon.getFrequency()) + " Hz");
-  Serial.println("Vcc (ADC ref voltage) =\t" + String(pmon.getVcc() / 1000.0) + " V");
-  Serial.println("V@V rms (sensor out) =\t" + String(pmon.Vrms) + " V");
-  Serial.println("V@I rms (sensor out) =\t" + String(pmon.Irms) + " V");
+  Serial.println("Frequency\t\t= " + String(pmon.getFrequency()) + " Hz");
+  Serial.println("Vcc (ADC ref voltage)\t= " + String(pmon.getVcc() / 1000.0, 3) + " V");
+  Serial.println("V@V rms (sensor out)\t= " + String(pmon.Vrms, 3) + " V");
+  Serial.println("V@I rms (sensor out)\t= " + String(pmon.Irms, 3) + " V");
 }
 
 void loop() {
