@@ -81,7 +81,7 @@ void PowerMonitor::calculate() {
   if (!isInitV || !isInitI)
     return;
   
-  float sumV = 0, sumI = 0, sumP = 0, Vcc = getVcc() / 1000.0 / 1024, ratioV = Vcc * calV, ratioI = Vcc * calI;
+  float sumV = 0, sumI = 0, sumP = 0, adcStepVal = getVcc() / 1000.0 / 1024, ratioV = adcStepVal * calV, ratioI = adcStepVal * calI;
   int8_t i;
   
   for (int8_t i = 0; i < sampleCount; ++i) {
