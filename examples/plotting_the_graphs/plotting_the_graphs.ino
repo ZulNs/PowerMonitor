@@ -8,7 +8,7 @@
  * - Open Serial Plotter window by clicking [Tools] => [Serial Plotter]
  *   or press [Ctrl]+[Shift]+[L] buttons on your keyboard.
  * - The blue color for voltage graphs, red for current, and green for real power.
- * - Select 115200 Baud, also select [Newline] instead of [No line ending].
+ * - Select 9600 Baud, also select [Newline] instead of [No line ending].
  * - To change the speed of drawing the graphs, adjust the delay time
  *   (default 100ms) by send "d50" or "d200". The former changes the delay
  *   to 50ms and the later to 200ms.
@@ -29,18 +29,18 @@
 
 const byte VOLTAGE_SENSOR_PIN = 0;
 const byte CURRENT_SENSOR_PIN = 1;
-const float VOLTAGE_CALIBRATION = 1.0;
-const float CURRENT_CALIBRATION = 1.0;
+//const float VOLTAGE_CALIBRATION = 155.0;
+//const float CURRENT_CALIBRATION = 3.06;
 
 PowerMonitor pmon;
 
 int16_t * samplesV, * samplesI;
 
 void setup() {
-  Serial.begin(115200);
+  Serial.begin(9600);
   
-  pmon.initVoltageSensor(VOLTAGE_SENSOR_PIN, VOLTAGE_CALIBRATION);
-  pmon.initCurrentSensor(CURRENT_SENSOR_PIN, CURRENT_CALIBRATION);
+  pmon.initVoltageSensor(VOLTAGE_SENSOR_PIN);
+  pmon.initCurrentSensor(CURRENT_SENSOR_PIN);
 
   samplesV = pmon.getVoltageSampleArray();
   samplesI = pmon.getCurrentSampleArray();
