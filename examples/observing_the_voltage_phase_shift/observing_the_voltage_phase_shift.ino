@@ -50,12 +50,12 @@ void setup() {
   samplesV = pmon.getVoltageSampleArray();
   samplesI = pmon.getCurrentSampleArray();
   
-  Serial.println(F("The sampling process is to take the voltage value and "));
+  Serial.println(F("The sampling process is to take the voltage value & "));
   Serial.println(F("immediately followed by the current value repeatedly "));
   Serial.println(F("for one full voltage AC waveform. It takes around 90 times "));
   Serial.println(F("for 50Hz. If the current sensor is not initiated, then "));
   Serial.println(F("the voltage value on the same sensor will be sampled. "));
-  Serial.println(F("Here the former sampling called V@V, and the later called V@I."));
+  Serial.println(F("Here the former sampling called V@V & the latter called V@I."));
   Serial.println();
   Serial.println("Number of sample (n): " + String(pmon.sampleCount));
   Serial.println(F("====================="));
