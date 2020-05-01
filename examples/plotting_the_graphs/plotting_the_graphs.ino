@@ -11,7 +11,7 @@
  * - Select 9600 Baud, also select [Newline] instead of [No line ending].
  * - To change the speed of drawing the graphs, adjust the delay time
  *   (default 100ms) by send "d50" or "d200". The former changes the delay
- *   to 50ms and the later to 200ms.
+ *   to 50ms and the latter to 200ms.
  * - To reduce the shape of voltage graph by two times, simply send "v0.5".
  * - To increase the shape of current graph by 10 times, simply send "i10".
  * - To reduce the shape of real power graph by 20 times, simply send "p0.05".
