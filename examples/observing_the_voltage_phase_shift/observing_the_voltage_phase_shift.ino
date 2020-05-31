@@ -2,7 +2,7 @@
  * observing_the_voltage_phase_shift.ino
  * 
  * Created 26 April 2020 (amid CoViD-19 outbreaks)
- * by Zulns
+ * by ZulNs
  * @Gorontalo, Indonesia
  * 
  * This example code is in the public domain.
