@@ -17,7 +17,7 @@
  * - To reduce the shape of real power graph by 20 times, simply send "p0.05".
  * 
  * Created 27 April 2020 (amid CoViD-19 outbreaks)
- * by Zulns
+ * by ZulNs
  * @Gorontalo, Indonesia
  * 
  * This example code is in the public domain.
