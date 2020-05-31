@@ -2,7 +2,7 @@
  * voltage_only_monitor.ino
  * 
  * Created 27 April 2020 (amid CoViD-19 outbreaks)
- * by Zulns
+ * by ZulNs
  * @Gorontalo, Indonesia
  * 
  * This example code is in the public domain.
